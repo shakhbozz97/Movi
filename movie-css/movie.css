@@ -1,0 +1,646 @@
+:root{
+    --background:#032541;
+    --maxwidthcontent:1100px;
+    --aherfcolor: #ffff;
+    --fontfamily: Fira Sans;
+    --fontsize: 1em;
+    --fontweight:600;
+    --bclitegreen:26,209,177;
+    --bcliteblue:7,186,215;
+    --imgborderadius:8px;
+    --bordercolor:lightgreen;
+    --bordercolor1:yellow;
+    --bclinergrcolor: 3, 35, 65;
+    --tmdbLighterGreen: 192,254,207;
+    --tmdbLightGreen: 30,213,169;
+    --bottomposition: 58px; 
+    --tmdlightepruple:53,15,86;
+    --accountPurple: 128,91,231;
+    --tmdbLogoOrange: 253,193,112;
+    --tmdbLogoRed: 217,59,99;
+}
+*{
+    box-sizing: border-box;
+}
+p,h3{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+section{
+    padding: 0px 5px;
+}
+body{
+    margin: 0px;
+}
+.content1{
+    max-width: var(--maxwidthcontent);
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    background-color:var(--background);
+    height: auto;
+    padding: 15px;
+}
+
+.header-img{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar-link{
+    color: var(--aherfcolor);
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize);
+    font-weight: var(--fontweight);
+
+}
+
+.img-logo{
+    width: 150px;
+    height: 25px;
+}
+
+.header-flex{
+    padding-right: 20px;
+}
+.header-ulist{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-link,.plus,.header-links{
+    color: var(--aherfcolor);
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize);
+    font-weight: var(--fontweight);
+}
+
+.header-links{
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    background-color: var(--background);
+    padding: 6px;
+}
+
+.glass{
+    color: #01b4e4;
+    font-size: 1.3em;
+}
+
+/*finished header style*/
+
+
+/*start sectionfirst style*/
+
+.background-img{
+    width: 100%;
+    height: 41vh;
+    background-image:linear-gradient(rgba(var(--bclinergrcolor), 0.8),rgba(var(--bclinergrcolor), 0.8)), url(https://gamemag.ru/images/cache/News/News178380/7297e8555d-1_1390x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bac-media{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.column-wrap{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.bac-title{
+    margin: 0;
+    color: var(--aherfcolor);
+    font-family: var(--fontfamily);
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1;
+}
+.bac-text{
+    margin: 0;
+    color: var(--aherfcolor);
+    font-family: var(--fontfamily);
+   font-weight: 700;
+   font-size: 1.5em;
+   line-height: 1.1;
+}
+.long-input{
+    position: relative;
+}
+.input-search{
+    width: 100%;
+    padding: 9px 20px;
+    border-radius: 30px;
+    border: 0;
+}
+
+.search{
+    font-weight: var(--fontweight);
+    color: var(--aherfcolor);
+    background:linear-gradient(to right,rgba(var(--bcliteblue), 0.8),rgba(var(--bclitegreen), 0.8));
+    padding: 9px 26px;
+    border: 0;
+    border-radius: 30px;
+    position: absolute;
+    top:0 ;
+    right: 0;
+}
+
+/*second section start style*/
+
+.second-itiem{
+    padding: 30px 0px 0px;
+}
+.second-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+}
+.titlewraper{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;  
+}
+.title-h{
+    font-weight: var(--fontweight);
+    font-family: var(--fontfamily);
+}
+.title-p{
+    font-weight: var(--fontweight);
+    background: linear-gradient(to right,rgba(var(--tmdbLighterGreen), 0.8),rgba(var(--tmdbLightGreen), 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--fontfamily);
+}
+.gradientText{
+    border-radius:30px ;
+    padding: 4px 20px;
+    background-color: var(--background);
+}
+.ttile_p{
+    font-weight: var(--fontweight);
+    font-family: var(--fontfamily);
+    padding: 4px 20px;
+}
+.overfolow-itiem{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.second-overfolow{
+    min-height: 290px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.flex-scroll{
+    padding: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+    min-height: inherit;
+}
+
+.card-style{
+    border-radius: var(--imgborderadius);
+    height: 200px;
+    width: 125px;
+    overflow: hidden;
+}
+
+.overfolow-img{
+    width: 100%;
+    height: 100%;
+}
+
+.overfolow-h{
+    font-size: 10px;
+    font-family: var(--fontfamily);
+    line-height: 10px;
+    color: black;
+
+}
+.overfolow-p{
+    font-size:8px;
+    color: rgba(0, 0, 0, .6);
+    font-family: var(--fontfamily);
+    margin-top: 5px;
+}
+.overfolow-itiem-text{
+    position: relative;
+    align-self: flex-start;
+    padding-left: 12px 
+}
+.number{
+    font-size: .7rem;
+    color: var(--aherfcolor);
+    text-align: center;
+}
+.circle{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    left: 12px;
+}
+.bottom{
+    bottom: 58px 
+}
+.border-circle{
+    border: 2px solid var(--bordercolor) ;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brcolory{
+    border-color: var(--bordercolor1);
+}
+/*second_section finished style*/
+
+/*third_section start style*/
+
+.third-itiem{
+    min-height: 300px;
+    background-image:linear-gradient(rgba(var(--bclinergrcolor), 0.8),rgba(var(--bclinergrcolor), 0.8)), url(https://www.themoviedb.org/t/p/w1920_and_h427_multi_faces/5CGM0vQpq0QBcslUXqoo0unlGPZ.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+
+.third-itiem{
+    padding-top: 30px;
+}
+.baccolor{
+    border-radius:30px;
+    background: linear-gradient(to right,rgba(var(--tmdbLighterGreen), 0.8),rgba(var(--tmdbLightGreen), 0.8)); 
+    color: black;
+}
+.bordcolor,.h3{
+    color: #ffff;
+}
+.wrapper-title{
+    border-color: var(--bordercolor);
+}
+
+.movie{
+    padding: 20px 0px ;
+    display: flex;
+    align-items: flex-start;
+    min-height: inherit;
+}
+
+.movie-wrapper {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.wrapper-itiem-movie {
+    border-radius: var(--imgborderadius);
+    height: 200px;
+    max-width: 361px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.video::before{
+    content: '';
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+    position: absolute;
+    left: 166px;
+    top: 76px;
+    border-radius: 3px;
+}
+.movie-itiem-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.movie-h,.movie-p{
+    font-size: var(--fontsize);
+    font-family: var(--fontfamily);
+    font-weight: var(--fontweight);
+    color: var(--aherfcolor);
+}
+
+.movie-p{
+    --fontsize:13px
+}
+
+.bacardcolor{
+    background-color: var(--background);
+    border-radius: 15px;
+    height: 19px;
+    width: 65px;
+}
+.five-wraper{
+    background: linear-gradient(to right,rgba(var(--tmdlightepruple), 0.8),rgba(var(--tmdlightepruple), 0.8)), url(https://gamemag.ru/images/cache/News/News178380/7297e8555d-1_1390x600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+}
+
+.wraper-text{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.wraper-itiem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.size{
+    padding: 0px;
+    font-size: 12.6px;
+    max-width: 572px;
+}
+.italic{
+    font-style: italic;
+    opacity: .7;
+}
+.registar{
+    color: #fff;
+    font-size: .9em;
+    font-weight: 600;
+    background-color: rgba(var(--accountPurple),1);
+    border-radius: 5px;
+    padding: 8px 16px 
+    
+}
+.ulist{
+    margin: 0px;
+    color: var(--aherfcolor);
+    font-size: var(--fontsize);
+    opacity: .7;
+}
+.sixth_section{
+    padding: 20px 40px;
+}
+.weight{
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.circle1,.circle2{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background:linear-gradient(to right,rgba(var(--bcliteblue), 0.8),rgba(var(--bclitegreen), 0.8));
+}
+.circle2{
+    background: linear-gradient(to right,rgba(var(--tmdbLogoOrange),1) 0%,rgba(var(--tmdbLogoRed),1) 100%);
+}
+
+.title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.column-count{
+    padding-top: 20px;
+}
+.leaderboard{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar{
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    display: block;
+    background-color: rgb(0, 166, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: var(--aherfcolor);
+}
+ol li{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    margin: 0 0 ;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.data{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+.data,h3,a{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+ol.leaderboard li div.data{
+    flex-wrap: wrap;
+}
+.metar{
+    height: 8px;
+    margin-top: 6px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+h4{
+    padding: 0;
+    color: #000;
+    margin: 0 0 0 10px;
+    font-size: .9em;
+}
+.guage{
+    background:linear-gradient(to right,rgba(var(--bcliteblue), 0.8),rgba(var(--bclitegreen), 0.8));
+    height: 100%;
+    min-width: 40px;
+    border-radius: 4px;
+}
+.this-week{
+    background: linear-gradient(to right,rgba(var(--tmdbLogoOrange),1) 0%,rgba(var(--tmdbLogoRed),1) 100%);     
+}
+.R{
+    background: rgba(var(--tmdbLogoOrange));
+}
+.Segramer{
+    background: url(https://www.themoviedb.org/t/p/w64_and_h64_face/b6JFYmPdGWww0bD0YzJCRTAZ3kt.png);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:917px) {
+    .none{
+        display: none;
+    }
+}
+@media screen and (max-width:783px) {
+    .none-2{
+        display: none;
+    }
+    .content{
+        gap: 10px;
+    }
+}
+@media screen and (max-width:577px) {
+    .none-2{
+        display: none;
+    }
+    .content{
+        gap: 10px;
+    }
+    .column-wrap {
+        padding: 25px 22px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:509px) {
+    .img-logo{
+        width: 100px;
+    }
+    .header-ulist{
+        gap: 15px;
+    }
+    .column-wrap {
+        padding: 18px 16px;
+    }
+    .leaderboard{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;  
+    }
+    .none-display{
+        display: none;
+    }
+    .ulist{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .title_h{
+        margin: 0px;
+        font-size: 20sp;
+    }
+
+}
+@media screen and (max-width:430px) {
+    .navbar-link,.header-link{
+        font-size: 14px;
+    }
+    .bac-title,.bac-text{
+        font-size: 20px;
+    }
+    .column-wrap{
+        padding:15px 12px;
+    }
+    .wraper-text{
+        gap: 10px;
+    }
+    .none-display{
+        display: none;
+    }
+    .leaderboard{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+       
+    }
+    .header-flex {
+        padding-right: 0px;
+    }
+    .title_h{
+        margin: 0px;
+        font-size: 20px;
+    }
+    .ttile_p{
+        padding: 0px;
+    }
+    .titlewraper{
+        gap: 7px;
+        padding-right: 7px;
+    }
+}
